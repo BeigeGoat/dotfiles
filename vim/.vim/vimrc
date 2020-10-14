@@ -1,0 +1,23 @@
+" Basic Configs
+filetype plugin indent on
+syntax on
+set nocompatible
+set hidden
+set noswapfile
+set rnu
+set incsearch hls
+
+" Set path to include current file and current working dir and all sub dirs
+set path=.,**
+
+" Colorscheme
+packadd! dracula
+colorscheme dracula
+
+" Environment Vars
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="$HOME/.vim/vimrc"
+
+" Remaps
+inoremap <C-j> <Esc>
+
